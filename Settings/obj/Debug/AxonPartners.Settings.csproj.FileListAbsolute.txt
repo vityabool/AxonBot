@@ -22,3 +22,27 @@ C:\Users\bool\Documents\GitHub\AxonBot\Settings\bin\Debug\System.Net.Http.Format
 C:\Users\bool\Documents\GitHub\AxonBot\Settings\obj\Debug\AxonPartners.Settings.csprojResolveAssemblyReference.cache
 C:\Users\bool\Documents\GitHub\AxonBot\Settings\obj\Debug\Settings.dll
 C:\Users\bool\Documents\GitHub\AxonBot\Settings\obj\Debug\Settings.pdb
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Settings.dll.config
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Settings.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Settings.pdb
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Models.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\SqlServerProvider.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Microsoft.Bot.Connector.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\System.Web.Http.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Newtonsoft.Json.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Models.pdb
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Models.dll.config
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\SqlServerProvider.pdb
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Microsoft.Bot.Connector.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\System.Web.Http.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Newtonsoft.Json.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\obj\Debug\AxonPartners.Settings.csprojResolveAssemblyReference.cache
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\obj\Debug\Settings.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Settings\obj\Debug\Settings.pdb

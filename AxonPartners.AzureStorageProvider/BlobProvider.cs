@@ -13,7 +13,7 @@ namespace AxonPartners.DAL
 {
     public class StorageProvider
     {
-        string connectionString = "DefaultEndpointsProtocol=https;AccountName=axonpartners;AccountKey=;EndpointSuffix=core.windows.net";
+        string connectionString = "DefaultEndpointsProtocol=https;AccountName=axonpartners;AccountKey=FSQ8v/b3U1KNqXtv/t9LdEaCFJPNm7leigGjJ+upAXy6+TXxT0DxEvT/3nzeHkyevnJiicteUFaIjhBDzVV/Lw==;EndpointSuffix=core.windows.net";
         string containerName = "files";
         public string uploadToStorage(byte[] bytes)
         {

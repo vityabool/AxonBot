@@ -26,3 +26,31 @@ C:\Users\bool\Documents\GitHub\AxonBot\AxonPartners.WordGenerator\bin\Debug\Syst
 C:\Users\bool\Documents\GitHub\AxonBot\AxonPartners.WordGenerator\obj\Debug\AxonPartners.WordGenerator.csprojResolveAssemblyReference.cache
 C:\Users\bool\Documents\GitHub\AxonBot\AxonPartners.WordGenerator\obj\Debug\AxonPartners.WordGenerator.dll
 C:\Users\bool\Documents\GitHub\AxonBot\AxonPartners.WordGenerator\obj\Debug\AxonPartners.WordGenerator.pdb
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\AxonPartners.WordGenerator.dll.config
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\AxonPartners.WordGenerator.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\AxonPartners.WordGenerator.pdb
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\DocX.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Models.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Settings.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Microsoft.Bot.Connector.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\SqlServerProvider.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\System.Web.Http.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Models.pdb
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Models.dll.config
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Settings.pdb
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Settings.dll.config
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Microsoft.Bot.Connector.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\SqlServerProvider.pdb
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\System.Web.Http.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\obj\Debug\AxonPartners.WordGenerator.csprojResolveAssemblyReference.cache
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\obj\Debug\AxonPartners.WordGenerator.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\AxonPartners.WordGenerator\obj\Debug\AxonPartners.WordGenerator.pdb

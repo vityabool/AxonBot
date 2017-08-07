@@ -21,6 +21,7 @@ namespace AxonPartners
         {
             string answer = _answer?.ToString();
 
+            //Handle first message in pipeline
             if (answer == null)
             {
                 LastQuestion = Settings.Instance.GetQuestionById(0, lang, pid);
@@ -33,6 +34,14 @@ namespace AxonPartners
                 if (answer.ToLower() == Settings.Instance.GetSettingValue("StartCmd").ToLower())
                 {
                     LastQuestion = Settings.Instance.GetQuestionById(1, lang, pid);
+                    LastQuestionAskTime = DateTime.UtcNow;
+                    return new Tuple<string, MessageTypes>(LastQuestion.QuestionText, LastQuestion.MessageType);
+                }
+
+                //Handle restarting dialog
+                if(LastQuestion == null)
+                {
+                    LastQuestion = Settings.Instance.GetQuestionById(0, lang, pid);
                     LastQuestionAskTime = DateTime.UtcNow;
                     return new Tuple<string, MessageTypes>(LastQuestion.QuestionText, LastQuestion.MessageType);
                 }

@@ -36,13 +36,15 @@ namespace AxonPartners.Bot
                 else if (msg == Settings.Instance.GetSettingValue("HelpCmd"))
                 {
                     var connector = new ConnectorClient(new Uri(activity.ServiceUrl));
-
                     Activity reply = activity.CreateReply(Settings.Instance.GetTextBySettingValue("HelpTxt"));
-
                     await connector.Conversations.SendToConversationAsync(reply);
                 }
                 else if(msg == Settings.Instance.GetSettingValue("FinishCmd"))
                 {
+                    var connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+                    Activity reply = activity.CreateReply(Settings.Instance.GetTextBySettingValue("HelpTxt"));
+                    await connector.Conversations.SendToConversationAsync(reply);
+
                     activity.GetStateClient().BotState.DeleteStateForUser(activity.ChannelId, activity.From.Id);
                 }
                 else
@@ -69,7 +71,6 @@ namespace AxonPartners.Bot
             var response = Request.CreateResponse(HttpStatusCode.OK);
             return response;
         }
-
         private async Task<Activity> HandleSystemMessage(Activity message)
         {
             if (message.Type == ActivityTypes.DeleteUserData)
