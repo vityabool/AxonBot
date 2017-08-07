@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{3C071BB6-E4EE-44FD-8834-B00BA2678959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxonPartners.AzureStorageProvider", "AxonPartners.AzureStorageProvider\AxonPartners.AzureStorageProvider.csproj", "{8D5E6E47-2D86-4B6C-9CF0-B950D5253053}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{DBC3511C-938E-446F-B72F-3C0E90C681A6}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Desktop\20170503-Схема-документа.docx = ..\..\..\..\Desktop\20170503-Схема-документа.docx
+		..\..\..\..\Pictures\WP_20170410_11_23_43_Pro.jpg = ..\..\..\..\Pictures\WP_20170410_11_23_43_Pro.jpg
+		..\..\..\образец от бота.docx = ..\..\..\образец от бота.docx
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxonPartners.Bot", "AxonPartners.Bot\AxonPartners.Bot.csproj", "{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxonPartners.WordGenerator", "AxonPartners.WordGenerator\AxonPartners.WordGenerator.csproj", "{295159E8-7A33-4925-B3CC-7E7F0B317EBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxonPartners.Models", "Models\AxonPartners.Models.csproj", "{5489F44C-8C9D-4862-AAA4-D41ABFD8C3C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDocGenApp", "TestDocGenApp\TestDocGenApp.csproj", "{0D472A64-DE73-48B3-A0FB-5480294560DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxonPartners.SqlServerProvider", "SqlServerProvider\AxonPartners.SqlServerProvider.csproj", "{08254679-4EA8-48F0-8272-FC57B713B216}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxonPartners.Settings", "Settings\AxonPartners.Settings.csproj", "{2E525E72-FC3C-46F3-943F-61BB734948F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxonPartners.DialogProcessor", "AxonPartners.DialogProcessor\AxonPartners.DialogProcessor.csproj", "{17410CEA-3B9F-471F-A48A-2350052D9072}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{49E92729-5B3E-4C5C-9592-77434DBFAA44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D5E6E47-2D86-4B6C-9CF0-B950D5253053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D5E6E47-2D86-4B6C-9CF0-B950D5253053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D5E6E47-2D86-4B6C-9CF0-B950D5253053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D5E6E47-2D86-4B6C-9CF0-B950D5253053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{295159E8-7A33-4925-B3CC-7E7F0B317EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{295159E8-7A33-4925-B3CC-7E7F0B317EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{295159E8-7A33-4925-B3CC-7E7F0B317EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{295159E8-7A33-4925-B3CC-7E7F0B317EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5489F44C-8C9D-4862-AAA4-D41ABFD8C3C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5489F44C-8C9D-4862-AAA4-D41ABFD8C3C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5489F44C-8C9D-4862-AAA4-D41ABFD8C3C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5489F44C-8C9D-4862-AAA4-D41ABFD8C3C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D472A64-DE73-48B3-A0FB-5480294560DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D472A64-DE73-48B3-A0FB-5480294560DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D472A64-DE73-48B3-A0FB-5480294560DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D472A64-DE73-48B3-A0FB-5480294560DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08254679-4EA8-48F0-8272-FC57B713B216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08254679-4EA8-48F0-8272-FC57B713B216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08254679-4EA8-48F0-8272-FC57B713B216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08254679-4EA8-48F0-8272-FC57B713B216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E525E72-FC3C-46F3-943F-61BB734948F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E525E72-FC3C-46F3-943F-61BB734948F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E525E72-FC3C-46F3-943F-61BB734948F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E525E72-FC3C-46F3-943F-61BB734948F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17410CEA-3B9F-471F-A48A-2350052D9072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17410CEA-3B9F-471F-A48A-2350052D9072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17410CEA-3B9F-471F-A48A-2350052D9072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17410CEA-3B9F-471F-A48A-2350052D9072}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D5E6E47-2D86-4B6C-9CF0-B950D5253053} = {3C071BB6-E4EE-44FD-8834-B00BA2678959}
+		{295159E8-7A33-4925-B3CC-7E7F0B317EBF} = {49E92729-5B3E-4C5C-9592-77434DBFAA44}
+		{08254679-4EA8-48F0-8272-FC57B713B216} = {3C071BB6-E4EE-44FD-8834-B00BA2678959}
+		{2E525E72-FC3C-46F3-943F-61BB734948F1} = {49E92729-5B3E-4C5C-9592-77434DBFAA44}
+		{17410CEA-3B9F-471F-A48A-2350052D9072} = {49E92729-5B3E-4C5C-9592-77434DBFAA44}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\Models\bin\Release\Models.dll
+C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\Models\bin\Release\Models.pdb
+C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\Models\obj\Release\Models.csprojResolveAssemblyReference.cache
+C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\Models\obj\Release\Models.dll
+C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\Models\obj\Release\Models.pdb
