@@ -4,6 +4,7 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.WindowsAzure.Storage.Table;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -13,7 +14,8 @@ namespace AxonPartners.DAL
 {
     public class StorageProvider
     {
-        string connectionString = "DefaultEndpointsProtocol=https;AccountName=axonpartners;AccountKey=FSQ8v/b3U1KNqXtv/t9LdEaCFJPNm7leigGjJ+upAXy6+TXxT0DxEvT/3nzeHkyevnJiicteUFaIjhBDzVV/Lw==;EndpointSuffix=core.windows.net";
+        //string connectionString = "DefaultEndpointsProtocol=https;AccountName=axonpartners;AccountKey=FSQ8v/b3U1KNqXtv/t9LdEaCFJPNm7leigGjJ+upAXy6+TXxT0DxEvT/3nzeHkyevnJiicteUFaIjhBDzVV/Lw==;EndpointSuffix=core.windows.net";
+        string connectionString = ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
         string containerName = "files";
         public string uploadToStorage(byte[] bytes)
         {
@@ -29,7 +31,6 @@ namespace AxonPartners.DAL
 
             return blob.Uri.ToString();
         }
-
         public bool logMessage(DbMessageEntity entity)
         {
             try

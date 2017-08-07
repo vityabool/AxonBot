@@ -56,9 +56,7 @@ namespace AxonPartners.Bot
                     catch
                     {
                         var connector = new ConnectorClient(new Uri(activity.ServiceUrl));
-
                         Activity reply = activity.CreateReply(Settings.Instance.GetTextBySettingValue("HelpTxt"));
-
                         await connector.Conversations.SendToConversationAsync(reply);
                     }
                 }

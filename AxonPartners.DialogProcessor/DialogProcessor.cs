@@ -46,6 +46,26 @@ namespace AxonPartners
                     return new Tuple<string, MessageTypes>(LastQuestion.QuestionText, LastQuestion.MessageType);
                 }
 
+                //Handle go to prevoius message
+                if (answer.ToLower() == Settings.Instance.GetSettingValue("PrevCmd").ToLower())
+                {
+                    if(Answers != null && Answers.Count > 1)
+                    {
+                        LastQuestion = Settings.Instance.GetQuestionById(Answers[Answers.Count - 1].QuestionId);
+                        LastQuestionAskTime = DateTime.UtcNow;
+                        Answers.RemoveAt(Answers.Count - 1);
+                        return new Tuple<string, MessageTypes>(LastQuestion.QuestionText, LastQuestion.MessageType);
+                    }
+                    else
+                    {
+                        LastQuestion = Settings.Instance.GetQuestionById(0, lang, pid);
+                        LastQuestionAskTime = DateTime.UtcNow;
+                        Answers = null;
+                        return new Tuple<string, MessageTypes>(LastQuestion.QuestionText, LastQuestion.MessageType);
+                    }
+                }
+
+                //Execute normal scenario
                 LastAnswerReceivedTime = DateTime.UtcNow;
 
                 if (Answers == null) Answers = new List<Answer>();

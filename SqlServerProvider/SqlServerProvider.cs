@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
@@ -7,12 +8,13 @@ namespace AxonPartners.DAL
 {
     public static class SqlServerProvider
     {
-        private const string SqlDbConnectionString = "Server=tcp:axon-srv.database.windows.net,1433;Initial Catalog=axonDb;Persist Security Info=False;User ID=axonadmin;Password=Qwerty#123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        //private const string SqlDbConnectionString = "Server=tcp:axon-srv.database.windows.net,1433;Initial Catalog=axonDb;Persist Security Info=False;User ID=axonadmin;Password=Qwerty#123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private static string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
 
         public static async Task<bool> AddUser(string id, string name)
         {
             bool result = false;
-            using (SqlConnection connection = new SqlConnection(SqlDbConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 await connection.OpenAsync();
                 SqlCommand command = new SqlCommand($"SELECT 1 as [Result] FROM [dbo].[Users] WHERE [Id] = '{id}';", connection);
@@ -41,7 +43,7 @@ namespace AxonPartners.DAL
         public static async Task<bool> UpdateEmail(string id, string email)
         {
             bool result = false;
-            using (SqlConnection connection = new SqlConnection(SqlDbConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 await connection.OpenAsync();
                 SqlCommand command = new SqlCommand($"SELECT 1 as [Result] FROM [dbo].[Users] WHERE [Id] = '{id}';", connection);
@@ -70,7 +72,7 @@ namespace AxonPartners.DAL
         public static async Task<bool> UpdateLang(string id, string lang)
         {
             bool result = false;
-            using (SqlConnection connection = new SqlConnection(SqlDbConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 await connection.OpenAsync();
                 SqlCommand command = new SqlCommand($"SELECT 1 as [Result] FROM [dbo].[Users] WHERE [Id] = '{id}';", connection);
@@ -101,7 +103,7 @@ namespace AxonPartners.DAL
         {
             DataTable result = null;
 
-            using (SqlConnection connection = new SqlConnection(SqlDbConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 await connection.OpenAsync();
                 SqlCommand command = new SqlCommand($"SELECT [Pid], [Lang], [Id], [NextId], [MessageType], [YesNoOption], [QuestionText], [lpIfYesGoToId], [lpIfNoGoToId], [epExitAnswer], [epExitMessage], [ParamName], [IfYesTextId], [IfNoTextId] FROM [dbo].[DialogPipeline] ORDER BY [Pid], [Lang], [Id];", connection);
@@ -124,7 +126,7 @@ namespace AxonPartners.DAL
         {
             DataTable result = null;
 
-            using (SqlConnection connection = new SqlConnection(SqlDbConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 await connection.OpenAsync();
                 SqlCommand command = new SqlCommand($"SELECT [Id], [Parameter], [Value] FROM [dbo].[Settings] ORDER BY [Id];", connection);
@@ -147,7 +149,7 @@ namespace AxonPartners.DAL
         {
             DataTable result = null;
 
-            using (SqlConnection connection = new SqlConnection(SqlDbConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 await connection.OpenAsync();
                 SqlCommand command = new SqlCommand($"SELECT [Id], [Lang], [Text] FROM [dbo].[Texts] ORDER BY [Id];", connection);
@@ -178,7 +180,7 @@ namespace AxonPartners.DAL
         {
             DataTable result = null;
 
-            using (SqlConnection connection = new SqlConnection(SqlDbConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 await connection.OpenAsync();
                 SqlCommand command = new SqlCommand($"SELECT * FROM [dbo].[Messages] WHERE [UserId] = '{user}' AND [ConversationId] = '{id}' ORDER BY [QuestionId];", connection);
@@ -205,7 +207,7 @@ namespace AxonPartners.DAL
         public static async Task<bool> RawInsert(string sqlStmt)
         {
             bool result = false;
-            using (SqlConnection connection = new SqlConnection(SqlDbConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 await connection.OpenAsync();
                 SqlCommand command = new SqlCommand(sqlStmt, connection);
