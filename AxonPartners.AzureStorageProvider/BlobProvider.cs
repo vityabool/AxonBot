@@ -62,19 +62,26 @@ namespace AxonPartners.DAL
 
         public UserDialogState getDialogState(string ChannelId, string userId)
         {
-            TableOperation retreiveOperation = TableOperation.Retrieve(ChannelId, userId);
+            try
+            {
+                TableOperation retreiveOperation = TableOperation.Retrieve(ChannelId, userId);
 
-            var result = account.CreateCloudTableClient().
-                    GetTableReference("states").
-                    Execute(retreiveOperation);
+                var result = account.CreateCloudTableClient().
+                        GetTableReference("states").
+                        Execute(retreiveOperation);
 
-            if (result == null)
+                if (result == null || result.Result == null)
+                {
+                    return null;
+                }
+                else
+                {
+                    return convertFromDictionary<UserDialogState>((Dictionary<string, EntityProperty>)((DynamicTableEntity)result.Result).Properties);
+                }
+            }
+            catch
             {
                 return null;
-            }
-            else
-            {
-                return convertFromDictionary<UserDialogState>((Dictionary<string, EntityProperty>)((DynamicTableEntity)result.Result).Properties);
             }
         }
         public bool updateDialogState(string ChannelId, string userId, bool? IsFinished = null, int? lastQuestionId = null, string DialogId = null)

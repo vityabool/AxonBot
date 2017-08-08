@@ -21,6 +21,7 @@ namespace AxonPartners
         public Tuple<string, MessageTypes> GetNextQuestion(DbMessageEntity dbMessageEntity, object _answer = null, string lang = "en", int pid = 1)
         {
             string answer = _answer?.ToString();
+            preloadState(dbMessageEntity);
 
             //Handle first message in pipeline
             if (answer == null)
@@ -93,6 +94,7 @@ namespace AxonPartners
                                 case YesNoOptions.Exit:
                                     if (bool.Parse(answer) == LastQuestion.ExitParameter.ExitAnswer)
                                     {
+                                        updateUserDialogState();
                                         return new Tuple<string, MessageTypes>(LastQuestion.ExitParameter.ExitMessage, MessageTypes.Exit);
                                     }
                                     else
@@ -120,7 +122,44 @@ namespace AxonPartners
                 }
             }
 
+            updateUserDialogState();
+
             return new Tuple<string, MessageTypes>(LastQuestion.QuestionText, LastQuestion.MessageType);
+        }
+
+        public void updateUserDialogState()
+        {
+            try
+            {
+                if (userDialogState != null)
+                {
+                    if (userDialogState.IsFinished == true &&
+                        LastQuestion.MessageType != MessageTypes.Final &&
+                        !(LastQuestion.MessageType == MessageTypes.YesNo && LastQuestion.YesNoOption == YesNoOptions.Exit))
+                    {
+                        userDialogState.IsFinished = false;
+                        userDialogState.DialogId = Guid.NewGuid().ToString();
+                    }
+
+                    userDialogState.LastAskedQuestionId = LastQuestion.Id;
+
+                    if (LastQuestion.MessageType == MessageTypes.Final ||
+                            (LastQuestion.MessageType == MessageTypes.YesNo &&
+                            LastQuestion.YesNoOption == YesNoOptions.Exit &&
+                            Answers != null && Answers.Count > 0 &&
+                            bool.Parse(Answers[Answers.Count - 1].AnswerText) == LastQuestion.ExitParameter.ExitAnswer)
+                            )
+                    {
+                        userDialogState.IsFinished = true;
+                    }
+
+                    userDialogState.sysUpdateDateUtc = DateTime.UtcNow;
+
+                    saveState();
+                }
+
+            }
+            catch { }
         }
         public Answer GetAnswerByQuestionParameter(string parameter, string lang = "en", int pid = 1)
         {
@@ -134,8 +173,6 @@ namespace AxonPartners
             Answers = null;
             userDialogState = null;
         }
-
-
         void LogMessage(DbMessageEntity entity, Question q, Answer a)
         {
 
@@ -156,7 +193,7 @@ namespace AxonPartners
                 StorageProvider SP = new StorageProvider();
                 userDialogState = SP.getDialogState(entity.ChannelId, entity.UserId);
 
-                if (userDialogState != null)
+                if (userDialogState == null)
                 {
                     userDialogState = new UserDialogState
                     {

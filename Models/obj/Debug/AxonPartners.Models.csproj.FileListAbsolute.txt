@@ -71,5 +71,6 @@ C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Models\bin\
 C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Models\bin\Debug\pt-BR\Microsoft.Bot.Builder.resources.dll
 C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Models\bin\Debug\ru\Microsoft.Bot.Builder.resources.dll
 C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Models\bin\Debug\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Models\obj\Debug\AxonPartners.Models.csprojResolveAssemblyReference.cache
 C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Models\obj\Debug\Models.dll
 C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\Models\obj\Debug\Models.pdb

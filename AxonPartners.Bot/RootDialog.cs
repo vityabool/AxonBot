@@ -39,11 +39,17 @@ namespace AxonPartners.Bot
                 await context.PostAsync(Settings.Instance.GetTextBySettingValue("DialRespErrorTxt"));
             }
         }
-        private async Task BoolDialogMessageReceivedAsync(IDialogContext context, IAwaitable<bool> result)
+        private async Task BoolDialogMessageReceivedAsync(IDialogContext context, IAwaitable<string> result)
         {
             try
             {
-                ProcessMessage(dialogProcessor.GetNextQuestion((Activity)context.Activity, await result), context);
+                string normalizedResponce = await result;
+
+                if (normalizedResponce.Trim().ToLower() == "yes") normalizedResponce = "True";
+                else if (normalizedResponce.Trim().ToLower() == "no") normalizedResponce = "False";
+                else if (normalizedResponce.Trim().ToLower() == "back") normalizedResponce = Settings.Instance.GetSettingValue("PrevCmd");
+
+                ProcessMessage(dialogProcessor.GetNextQuestion((Activity)context.Activity, normalizedResponce), context);
             }
             catch (TooManyAttemptsException)
             {
@@ -67,7 +73,7 @@ namespace AxonPartners.Bot
             switch (q.Item2)
             {
                 case MessageTypes.YesNo:
-                    context.Call(new BasicBooleanDialog(q.Item1), this.BoolDialogMessageReceivedAsync);
+                    context.Call(new BasicBooleanDialog(q.Item1, dialogProcessor.LastQuestion.Id != 0), this.BoolDialogMessageReceivedAsync);
                     break;
                 case MessageTypes.Text:
                     context.Call(new BasicStringDialog(q.Item1), this.StringDialogMessageReceivedAsync);
