@@ -7,7 +7,6 @@ namespace AxonPartners.DAL
 {
     public static class SqlServerProvider
     {
-        //private const string SqlDbConnectionString = "Server=tcp:axon-srv.database.windows.net,1433;Initial Catalog=axonDb;Persist Security Info=False;User ID=axonadmin;Password=Qwerty#123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         private static string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
 
         public static async Task<bool> AddUser(string id, string name)

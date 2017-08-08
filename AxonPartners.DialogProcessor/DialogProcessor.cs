@@ -18,9 +18,11 @@ namespace AxonPartners
 
         private UserDialogState userDialogState { get; set; }
 
-        public Tuple<string, MessageTypes> GetNextQuestion(DbMessageEntity dbMessageEntity, object _answer = null, string lang = "en", int pid = 1)
+        public Tuple<string, MessageTypes> GetNextQuestion(DbMessageEntity dbMessageEntity, object _answer = null, string lang = "en")
         {
             string answer = _answer?.ToString();
+            int pid = 1;
+            int.TryParse(Settings.Instance.GetSettingValue("ActivePid"), out pid);
 
             //Handle first message in pipeline
             if (answer == null)
