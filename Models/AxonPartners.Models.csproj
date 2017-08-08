@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
-    </Reference>
     <Reference Include="Chronic, Version=0.3.2.0, Culture=neutral, PublicKeyToken=3bd1f1ef638b0d3c, processorArchitecture=MSIL">
       <HintPath>..\packages\Chronic.Signed.0.3.2\lib\net40\Chronic.dll</HintPath>
     </Reference>
@@ -77,10 +74,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Answer.cs" />
     <Compile Include="ConversationStarterBase.cs" />
     <Compile Include="DbMessageObject.cs" />
+    <Compile Include="DocGenRelationFld.cs" />
+    <Compile Include="ExitParameterFld.cs" />
+    <Compile Include="LogicParameterFld.cs" />
+    <Compile Include="MessageTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Question.cs" />
+    <Compile Include="QuestionBase.cs" />
+    <Compile Include="SettingItem.cs" />
+    <Compile Include="TextItem.cs" />
+    <Compile Include="UserDialogState.cs" />
+    <Compile Include="YesNoOptions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

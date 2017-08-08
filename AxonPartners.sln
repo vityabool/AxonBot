@@ -9,7 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxonPartners.AzureStoragePr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{DBC3511C-938E-446F-B72F-3C0E90C681A6}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Desktop\20170503-Схема-документа.docx = ..\..\..\..\Desktop\20170503-Схема-документа.docx
 		..\..\..\..\Pictures\WP_20170410_11_23_43_Pro.jpg = ..\..\..\..\Pictures\WP_20170410_11_23_43_Pro.jpg
 		..\..\..\образец от бота.docx = ..\..\..\образец от бота.docx
 	EndProjectSection

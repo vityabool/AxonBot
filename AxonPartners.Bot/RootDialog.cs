@@ -1,15 +1,10 @@
-﻿using AxonPartners.DAL;
-using AxonPartners.Bot.BasicObjects;
+﻿using AxonPartners.Bot.BasicObjects;
 using AxonPartners.Bot.Dialogs;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 using AxonPartners.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
-using Newtonsoft.Json;
 
 namespace AxonPartners.Bot
 {
@@ -59,6 +54,7 @@ namespace AxonPartners.Bot
         {
             try
             {
+                dialogProcessor.ResetDialog();
                 context.Done(1);
             }
             catch (TooManyAttemptsException)

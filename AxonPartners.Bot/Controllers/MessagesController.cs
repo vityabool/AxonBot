@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
-using System.Web.Http.Description;
 using Microsoft.Bot.Connector;
-using Newtonsoft.Json;
 using Microsoft.Bot.Builder.Dialogs;
-using AxonPartners.Bot.Dialogs;
-using AxonPartners.Models;
-using Microsoft.Bot.Builder.Dialogs.Internals;
 using AxonPartners.DAL;
 
 namespace AxonPartners.Bot

@@ -5,8 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AxonPartners
 {
@@ -154,6 +152,8 @@ namespace AxonPartners
                     _Questions.Add(q);
                 }
             }
+
+            new StorageProvider().createArtifacts();
         }
 
         public string GetSettingValue(string name)

@@ -3,3 +3,8 @@ C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\SqlServerProvider\bin\Re
 C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\SqlServerProvider\obj\Release\AxonPartners.SqlServerProvider.csprojResolveAssemblyReference.cache
 C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\SqlServerProvider\obj\Release\SqlServerProvider.dll
 C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\SqlServerProvider\obj\Release\SqlServerProvider.pdb
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\SqlServerProvider\bin\Release\SqlServerProvider.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\SqlServerProvider\bin\Release\SqlServerProvider.pdb
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\SqlServerProvider\obj\Release\AxonPartners.SqlServerProvider.csprojResolveAssemblyReference.cache
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\SqlServerProvider\obj\Release\SqlServerProvider.dll
+C:\Users\v-spopla\Documents\Visual Studio 2017\Projects\AXON\AxonBot\SqlServerProvider\obj\Release\SqlServerProvider.pdb

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using Settings;
+using Models;
 
 namespace TestDocGenApp
 {
@@ -15,6 +16,24 @@ namespace TestDocGenApp
     {
         static void Main(string[] args)
         {
+            //StorageProvider SP = new StorageProvider("DefaultEndpointsProtocol=https;AccountName=axonpartners;AccountKey=FSQ8v/b3U1KNqXtv/t9LdEaCFJPNm7leigGjJ+upAXy6+TXxT0DxEvT/3nzeHkyevnJiicteUFaIjhBDzVV/Lw==;EndpointSuffix=core.windows.net");
+            //UserDialogState uds = new UserDialogState
+            //{
+            //    ChannelId = "skype",
+            //    ConversationId = "123456",
+            //    DialogId = Guid.NewGuid().ToString(),
+            //    IsFinished = false,
+            //    LastAskedQuestionId = 0,
+            //    UserId = "spopla",
+            //    sysUpdateDateUtc = DateTime.UtcNow
+            //};
+
+            //SP.addDialogState(uds);
+            //UserDialogState uds = SP.getDialogState("skype", "spopla");
+
+            //SP.updateDialogState(uds, false, 1, null);
+            //SP.updateDialogState("skype", "spopla", true, 16, null);
+
             //AxonPartners.Settings.Instance.Load();
             //DataTable DT = SqlServerProvider.LoadConversation("default-user", "7gjeklfcia1b").Result;
             //List<Answer> answers = null;
