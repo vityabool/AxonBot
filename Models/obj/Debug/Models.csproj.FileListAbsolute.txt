@@ -1,5 +1,0 @@
-C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\Models\bin\Debug\Models.dll
-C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\Models\bin\Debug\Models.pdb
-C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\Models\obj\Debug\Models.dll
-C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\Models\obj\Debug\Models.pdb
-C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

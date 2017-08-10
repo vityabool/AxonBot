@@ -1,5 +1,0 @@
-C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\SqlServerProvider\bin\Release\SqlServerProvider.dll
-C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\SqlServerProvider\bin\Release\SqlServerProvider.pdb
-C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\SqlServerProvider\obj\Release\SqlServerProvider.csprojResolveAssemblyReference.cache
-C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\SqlServerProvider\obj\Release\SqlServerProvider.dll
-C:\Users\v-spopla\Documents\GitHub\AxonBot\AxonPartners\SqlServerProvider\obj\Release\SqlServerProvider.pdb
