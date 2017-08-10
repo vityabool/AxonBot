@@ -5,32 +5,38 @@ using System.Threading.Tasks;
 namespace AxonPartners.Bot.BasicObjects
 {
     [Serializable]
-    public class BasicBooleanDialog : IDialog<bool>
+    public class BasicBooleanDialog : IDialog<string>
     {
         private string _question;
+        private bool _backOption;
 
         public BasicBooleanDialog() { _question = string.Empty; }
 
-        public BasicBooleanDialog(string question)
+        public BasicBooleanDialog(string question, bool backOption = true)
         {
             _question = question;
+            _backOption = backOption;
         }
 
         public async Task StartAsync(IDialogContext context)
         {
-            PromptDialog.Confirm(
+            string[] PromptOptions = null;
+            if(_backOption) PromptOptions = new string[] { "Yes", "No", "Back" };
+            else PromptOptions = new string[] { "Yes", "No" };
+
+            PromptDialog.Choice(
             context,
             AfterResetAsync,
-            _question,
-            Settings.Instance.GetTextBySettingValue("BoolInputErrorTxt") + " " + _question,
-            promptStyle: PromptStyle.Auto);
+            PromptOptions,
+            _question, promptStyle: PromptStyle.Auto
+            );
         }
 
-        public async Task AfterResetAsync(IDialogContext context, IAwaitable<bool> argument)
+        public async Task AfterResetAsync(IDialogContext context, IAwaitable<string> argument)
         {
-            bool confirm = await argument;
+            string res = await argument;
 
-            context.Done(confirm);
+            context.Done(res);
         }
     }
 }
