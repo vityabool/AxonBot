@@ -30,7 +30,7 @@ AxonPartners.Bot/Web.config
 ```
 
 You should change the default values for real connection strings before deploying:
-```
+```XML
   <appSettings>
     <!-- update these with your BotId, Microsoft App Id and your Microsoft App Password-->
     <add key="BotId" value="{YOUR BOT ID}" />
@@ -74,5 +74,5 @@ Table **Settings** describes logical commands like Help or Restart of the dialog
 
 ![Solution Tree](https://raw.githubusercontent.com/vityabool/AxonBot/master/Img/SolutionExplorer.jpg)
 
-The project has been created by @vityabool (Bot logic) and @spoplavskiy (DB abstraction and Singleton configuration).
+
 
