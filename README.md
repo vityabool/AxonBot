@@ -42,3 +42,37 @@ You should change the default values for real connection strings before deployin
     <add name="DatabaseConnectionString" connectionString="{YOUR DATABASE CONNECTION STRING}" />
   </connectionStrings>
 ```
+
+##### SQL Database Tables structure
+SQL Table **DialogPipleine** describes dialogs structure. The default dialog is Privacy Policy bot. By adding rows in this table almost any type of dialog could be created.
+![Dialog Pipeline Table](https://raw.githubusercontent.com/vityabool/AxonBot/master/Img/DialogPipleine.jpg)
+- **Pid** - # of the dialog. 
+- **Lang** - Language of the dialog. Multilanguage dialogs could be described here.
+- **Id* - Identifier of the step in the dialog
+- **NextId** - Next question bot should display. For example, by adding new row *Id 30* and changing *NextId* in the row *Id 2* to *30* bot jumps to the additional question.
+- **MessageType** - Could be YesNo, Text and Final.
+- **YesNoOption** - Field describes behavior of YesNo.
+- **Exit** - Close the dialog. Exit message in in the field **epExitMessage**
+    - **Logic** - Describes logical forks. In this case Fields **IpIfYesGoToId** and **IpNoGoToId** holds next question *id*. Fields **IfYesTextId** and **IfNoTextId** have ids of text blocks in the *Texts* table. 
+    - **Question** - Displays logical question. 
+- **ParamName** - Holds verbose name of the question.
+
+Table **Texts** stores all texts referenced from DialogPipeline table and some standard texts.
+![SQL Texts Table](https://raw.githubusercontent.com/vityabool/AxonBot/master/Img/Texts.jpg)
+
+Table **Settings** describes logical commands like Help or Restart of the dialog.
+
+![SQL Settings Table](https://raw.githubusercontent.com/vityabool/AxonBot/master/Img/Settings.jpg)
+
+##### Solution Folders structure
+- **DAL** - Abstraction classes to access storages and DB.
+- **Docs** - Privacy Policy agreement template (not used during compilation).
+- **Services** - Common classes to read and cache settings from the DB and crate Word document.
+- **AxonPartners.Bot** - Bot logic.
+- **AxonPartners.Models** - Classes to store data models.
+- **TestDocGenApp** - Testing utilities.
+
+![Solution Tree](https://raw.githubusercontent.com/vityabool/AxonBot/master/Img/SolutionExplorer.jpg)
+
+The project has been created by @vityabool (Bot logic) and @spoplavskiy (DB abstraction and Singleton configuration).
+
